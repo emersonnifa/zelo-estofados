@@ -1,11 +1,15 @@
+/*-------------------- CONFIGURAÇÕES GERAIS --------------------*/
+
 @import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
 :root {
     --bg-color-light-grey: #F7F9FB;
+    --bg-color-grey: #3e4947;
+    --bg-color-grey-hover: #E6E8EA;
     --bg-color-green: #006a65;
     --bg-color-green-hover: #0f7c77;
-    --bg-color-grey: #3e4947;
+    --bg-color-light-green: #9FF1EA;
 }
 
 .container {
@@ -16,9 +20,29 @@
     padding-right: 1.4rem;
 }
 
+h1 {
+    font-size: 48px;
+    font-family: 'Hanken Grotesk', sans-serif;
+    text-transform: capitalize;
+}
+
+h2 {
+    font-size: 32px;
+    font-weight: 500;
+    font-family: 'Hanken Grotesk', sans-serif;
+}
+
+h3 {
+    font-size: 24px;
+    font-weight: 500;
+    font-family: 'Hanken Grotesk', sans-serif;
+}
+
 body {
     background-color: var(--bg-color-light-grey);
 }
+
+/*-------------------- SEÇÃO DO MENU --------------------*/
 
 header {
     width: 100%;
@@ -65,4 +89,188 @@ header .btn_gr {
 header .btn_gr:hover {
     color: white;
     background-color: var(--bg-color-green-hover);
+}
+
+main {
+    font-family: 'Inter', sans-serif;
+}
+
+/*-------------------- SEÇÃO DO BANNER --------------------*/
+
+.banner {
+    width: 100%;
+    height: 90vh;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Inter', sans-serif;
+}
+
+.banner .box-texts {
+    width: 50%;
+}
+
+.banner .box-texts span {
+    text-transform: uppercase;
+    font-weight: 500;
+    background-color: var(--bg-color-light-green);
+    font-size: 14px;
+    padding: 5px 20px;
+    border-radius: 25px;
+}
+
+.banner .box-texts p {
+    font-size: 18px;
+    color: var(--bg-color-grey);
+    margin-bottom: 30px;
+}
+
+.banner .box-texts .btn_cta {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.banner .box-texts .btn_cta .green {
+    text-decoration: none;
+    color: white;
+    background-color: var(--bg-color-green);
+    padding: 15px 35px;
+    border-radius: 25px;
+    margin-right: 15px;
+    transition-duration: 300ms;
+}
+
+.banner .box-texts .btn_cta .green:hover {
+    background-color: var(--bg-color-green-hover);
+}
+
+.banner .box-texts .btn_cta .white {
+    text-decoration: none;
+    color: var(--bg-color-grey);
+    border: 1px solid var(--bg-color-grey);
+    padding: 15px 35px;
+    border-radius: 25px;
+    margin-right: 15px;
+    transition-duration: 300ms;
+}
+
+.banner .box-texts .btn_cta .white:hover {
+    background-color: var(--bg-color-grey-hover);
+}
+
+.banner .box-img {
+    width: 50%;
+}
+
+.banner .box-img .sofa-img {
+    width: 100%;
+}
+
+.banner .box-img .sofa-img img {
+    width: 100%;
+}
+
+
+/*-------------------- SEÇÃO DO SERVIÇOS --------------------*/
+
+.servicos {
+    width: 100%;
+    height: 85vh;
+}
+
+.servicos .type-services {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80%;
+    margin-top: 90px;
+}
+
+.servicos .type-services .service-sofa {
+    width: 43%;
+    height: 100%;
+    border: solid 1px #dddddd69;
+    background-color: white;
+    border-radius: 10px;
+    /* padding: 35px; */
+}
+
+.servicos .type-services .service-sofa svg {
+    background-color: var(--bg-color-light-green);
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.servicos .type-services .service-sofa p {
+    color: var(--bg-color-grey);
+}
+
+.servicos .type-services .service-sofa .sofa-img {
+    width: 100%;
+    height: 250px;
+    border-radius: 15px;
+    background-image: url('img/green-couch.png');
+    background-position: center;
+    margin-top: 200px;
+}
+
+.servicos .type-services .service-another {
+    width: 43%;
+    height: 100%;
+}
+
+.servicos .type-services .service-another .serv-colchao {
+    width: 100%;
+    height: 49%;
+    background-color: #F2F4F6;
+    border-radius: 15px;
+    border: solid 1px #dddddd69;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* padding: 35px; */
+}
+
+.servicos .type-services .service-another .serv-colchao .texto_col {
+    width: 70%;
+}
+
+.servicos .type-services .service-another .serv-colchao svg {
+    padding: 10px;
+}
+
+.servicos .type-services .service-another .serv-colchao p {
+    color: var(--bg-color-grey);
+}
+
+.servicos .type-services .service-another .serv-colchao .img-col {
+    width: 150px;
+    height: 150px;
+    border-radius: 100%;
+    background-image: url('img/colchao.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.servicos .type-services .service-another .more-serv {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+
+.tapetes {
+    background-color: #D7E6DC;
+    width: 48%;
+    height: 300px;
+    border-radius: 10px;
+}
+
+.poltronas {
+    background-color: #CDE5FF;
+    width: 48%;
+    height: 300px;
+    border-radius: 10px;
 }
