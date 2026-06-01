@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+:root {
+    --bg-color-light-grey: #F7F9FB;
+    --bg-color-green: #006a65;
+    --bg-color-green-hover: #0f7c77;
+    --bg-color-grey: #3e4947;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-left: 1.4rem;
+    padding-right: 1.4rem;
+}
+
+body {
+    background-color: var(--bg-color-light-grey);
+}
+
+header {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Hanken Grotesk', sans-serif;
+}
+
+header span {
+    color: var(--bg-color-green);
+    font-size: 24px;
+    font-weight: 500;
+}
+
+header nav ul {
+    display: flex;
+    list-style: none;
+}
+
+header nav ul li {
+    padding: 0 15px;
+}
+
+header a {
+    text-decoration: none;
+    color: var(--bg-color-grey);
+    font-weight: 600;
+    transition-duration: 300ms;
+}
+
+header nav ul li a:hover {
+    color: var(--bg-color-green);
+}
+
+header .btn_gr {
+    color: white;
+    background-color: var(--bg-color-green);
+    padding: 5px 15px;
+    border-radius: 15px;
+}
+
+header .btn_gr:hover {
+    color: white;
+    background-color: var(--bg-color-green-hover);
+}
