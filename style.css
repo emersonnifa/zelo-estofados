@@ -174,12 +174,24 @@ main {
 .servicos {
     width: 100%;
     height: 90vh;
+    /* margin-bottom: 100px; */
+}
+
+.servicos h2 {
+    padding-bottom: 0px;
+}
+
+.servicos .border {
+    border-bottom-style: solid;
+    width: 5rem;
+    border-color: var(--bg-color-green);
+    border-radius: 99999px;
+    border-bottom-width: 4px;
 }
 
 .servicos .type-services {
     display: flex;
     justify-content: space-between;
-    /* align-items: center; */
     height: 80%;
     margin-top: 90px;
 }
@@ -191,6 +203,11 @@ main {
     background-color: white;
     border-radius: 10px;
     padding: 35px;
+    transition-duration: 300ms;
+}
+
+.servicos .type-services .service-sofa:hover {
+    border: solid 1px var(--bg-color-green);
 }
 
 .servicos .type-services .service-sofa svg {
@@ -210,6 +227,12 @@ main {
     background-image: url('img/green-couch.png');
     background-position: center;
     margin-top: 110px;
+    filter: grayscale(100%);
+    transition-duration: 300ms;
+}
+
+.servicos .type-services .service-sofa .sofa-img:hover {
+    filter: grayscale(0%);
 }
 
 .servicos .type-services .service-another {
@@ -227,6 +250,11 @@ main {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    transition-duration: 1000ms;
+}
+
+.servicos .type-services .service-another .serv-colchao:hover {
+    box-shadow: 0px 10px 20px -10px var(--bg-color-grey);
 }
 
 .servicos .type-services .service-another .serv-colchao .texto_col {
@@ -291,7 +319,7 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 100px;
+    margin-top: 200px;
 }
 
 .pontos-positivos p {
