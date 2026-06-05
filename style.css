@@ -25,25 +25,30 @@
 }
 
 h1 {
-    font-size: 48px;
+    font-size: clamp(2rem, 4vw, 3rem);
     font-family: 'Hanken Grotesk', sans-serif;
     text-transform: capitalize;
 }
 
 h2 {
-    font-size: 32px;
+    font-size: clamp(1.5rem, 3vw, 2rem);
     font-weight: 500;
     font-family: 'Hanken Grotesk', sans-serif;
 }
 
 h3 {
-    font-size: 24px;
+    font-size: clamp(1.25rem, 2vw, 1.5rem);
     font-weight: 500;
     font-family: 'Hanken Grotesk', sans-serif;
 }
 
 body {
     background-color: var(--bg-color-light-grey);
+}
+
+p {
+    font-size: clamp(0.938rem, 1vw + 0.5rem, 1.125rem);
+    line-height: 1.6;
 }
 
 /*-------------------- SEÇÃO DO MENU --------------------*/
@@ -62,6 +67,7 @@ header .texts-menu {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 0;
 
 }
 
@@ -117,6 +123,7 @@ main {
     display: flex;
     justify-content: space-between;
     font-family: 'Inter', sans-serif;
+    padding: 0;
 }
 
 .banner .box-texts {
@@ -193,7 +200,7 @@ main {
 
 .servicos {
     width: 100%;
-    padding: 60px 0; 
+    padding: 60px 0;
 }
 
 .servicos h2 {
@@ -220,7 +227,7 @@ main {
 /* --- COLUNA ESQUERDA (SOFÁ) --- */
 .servicos .type-services .service-sofa {
     width: 48%;
-    min-height: 550px; 
+    min-height: 550px;
     border: solid 1px #dddddd69;
     background-color: white;
     border-radius: 10px;
@@ -315,7 +322,8 @@ main {
     justify-content: space-between;
 }
 
-.tapetes, .poltronas {
+.tapetes,
+.poltronas {
     width: 48%;
     height: 100%;
     border-radius: 10px;
@@ -332,6 +340,7 @@ main {
 .poltronas {
     background-color: #CDE5FF;
 }
+
 /*-------------------- SEÇÃO DO BENEFÍCIOS --------------------*/
 
 .pontos-positivos {
