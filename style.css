@@ -20,7 +20,7 @@
 
 .container {
     max-width: 1200px;
-    padding: 0 0.75rem;
+    padding: 0 4rem;
     margin: 0 auto;
 }
 
@@ -54,6 +54,7 @@ header {
     font-family: 'Hanken Grotesk', sans-serif;
     background-color: var(--bg-color-light-grey);
     position: fixed;
+    z-index: 1;
 }
 
 header .texts-menu {
@@ -111,7 +112,7 @@ main {
 
 .banner {
     width: 100%;
-    height: 90vh;
+    height: 100vh;
     align-items: center;
     display: flex;
     justify-content: space-between;
@@ -192,7 +193,7 @@ main {
 
 .servicos {
     width: 100%;
-    height: 90vh;
+    padding: 60px 0; 
 }
 
 .servicos h2 {
@@ -207,21 +208,27 @@ main {
     padding-top: 30px;
 }
 
+/* --- CONTAINER DOS SERVIÇOS --- */
 .servicos .type-services {
     display: flex;
     justify-content: space-between;
-    height: 80%;
+    align-items: stretch;
     margin-top: 90px;
+    gap: 4%;
 }
 
+/* --- COLUNA ESQUERDA (SOFÁ) --- */
 .servicos .type-services .service-sofa {
-    width: 43%;
-    height: 100%;
+    width: 48%;
+    min-height: 550px; 
     border: solid 1px #dddddd69;
     background-color: white;
     border-radius: 10px;
     padding: 35px;
     transition-duration: 300ms;
+    flex-direction: column;
+    display: flex;
+    justify-content: space-between;
 }
 
 .servicos .type-services .service-sofa:hover {
@@ -236,6 +243,7 @@ main {
 
 .servicos .type-services .service-sofa p {
     color: var(--bg-color-grey);
+    margin-bottom: 20px;
 }
 
 .servicos .type-services .service-sofa .sofa-img {
@@ -244,9 +252,10 @@ main {
     border-radius: 15px;
     background-image: url('img/green-couch.png');
     background-position: center;
-    margin-top: 110px;
+    background-size: cover;
     filter: grayscale(100%);
     transition-duration: 300ms;
+    margin-top: auto;
 }
 
 .servicos .type-services .service-sofa .sofa-img:hover {
@@ -255,19 +264,21 @@ main {
 
 .servicos .type-services .service-another {
     width: 48%;
-    height: 100%;
-
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .servicos .type-services .service-another .serv-colchao {
     width: 100%;
-    height: 49%;
+    height: 48%;
     background-color: #F2F4F6;
     border-radius: 15px;
     border: solid 1px #dddddd69;
     display: flex;
     justify-content: space-around;
     align-items: center;
+    padding: 20px;
     transition-duration: 1000ms;
 }
 
@@ -276,7 +287,7 @@ main {
 }
 
 .servicos .type-services .service-another .serv-colchao .texto_col {
-    width: 50%;
+    width: 55%;
 }
 
 .servicos .type-services .service-another .serv-colchao svg {
@@ -288,8 +299,8 @@ main {
 }
 
 .servicos .type-services .service-another .serv-colchao .img-col {
-    width: 150px;
-    height: 150px;
+    width: 130px;
+    height: 130px;
     border-radius: 100%;
     background-image: url('img/colchao.png');
     background-position: center;
@@ -299,34 +310,28 @@ main {
 
 .servicos .type-services .service-another .more-serv {
     width: 100%;
-    height: 50%;
+    height: 48%;
     display: flex;
     justify-content: space-between;
-    margin-top: 15px;
+}
+
+.tapetes, .poltronas {
+    width: 48%;
+    height: 100%;
+    border-radius: 10px;
+    padding: 25px;
+    flex-direction: column;
+    display: flex;
+    justify-content: space-between;
 }
 
 .tapetes {
     background-color: #D7E6DC;
-    width: 48%;
-    height: 260px;
-    border-radius: 10px;
-    padding: 32px;
-    flex-direction: column;
-    display: flex;
-    justify-content: space-around;
 }
 
 .poltronas {
     background-color: #CDE5FF;
-    width: 48%;
-    height: 260px;
-    border-radius: 10px;
-    padding: 32px;
-    flex-direction: column;
-    display: flex;
-    justify-content: space-around;
 }
-
 /*-------------------- SEÇÃO DO BENEFÍCIOS --------------------*/
 
 .pontos-positivos {
