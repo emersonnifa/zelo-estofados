@@ -152,6 +152,10 @@ main {
     margin-bottom: 30px;
 }
 
+.banner .box-texts .sofa-img-mb {
+    display: none;
+}
+
 .banner .box-texts .btn_cta {
     font-size: 14px;
     font-weight: 600;

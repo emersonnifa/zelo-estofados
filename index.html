@@ -17,7 +17,7 @@
     <header>
         <div class="texts-menu container">
             <span class="logo">Zelo Estofados</span>
-            <span id="hamburguer" class="material-symbols-outlined" onclick="clickMenu()" >menu</span>
+            <span id="hamburguer" class="material-symbols-outlined" onclick="clickMenu()">menu</span>
             <nav id="menuItens">
                 <ul>
                     <li><a href="#">Serviços</a></li>
@@ -31,12 +31,16 @@
     </header>
     <main>
         <!--|||||||||||||||||||||||||| seção responsável pelo banner |||||||||||||||||||||||||| -->
-        <section class="banner container">
+        <section class="banner container container-mb">
             <div class="box-texts">
                 <span>premium care</span>
                 <h1>o cuidado que o seu lar merece</h1>
                 <p>Transformamos o seu ambiente em um santuário de pureza através de uma limpeza meticulosa e
                     profissional de estofados.</p>
+
+                <div class="sofa-img-mb">
+                    <img src="img/sofa.jpg" alt="">
+                </div>
                 <div class="btn_cta">
                     <a href="#" class="green">Agende Agora</a>
                     <a href="#" class="white">Saber Mais</a>
@@ -145,10 +149,10 @@
 
     <script>
         function clickMenu() {
-            if (menuItens.style.display =='block') {
+            if (menuItens.style.display == 'block') {
                 menuItens.style.display = 'none'
             } else {
-                menuItens.style.display ='block'
+                menuItens.style.display = 'block'
             }
         }
     </script>

@@ -1,5 +1,11 @@
 @media (max-width: 480px) {
 
+    .container-mb {
+    max-width: 480px;
+    padding: 0 1rem;
+    margin: 0 auto;
+}
+
     header .texts-menu .logo {
         padding: 0 0 0 1rem ;
     }
@@ -28,5 +34,58 @@
 
     header .texts-menu nav ul li a {
         color: white;
+    }
+
+    .banner {
+        flex-direction: column;
+    }
+    
+    .banner .box-texts {
+        width: 100%;
+    }
+    
+    .banner .box-texts span {
+        display: none;
+    }
+    
+    .banner .box-texts h1 {
+        padding-top: 120px;
+        text-align: center;
+    }
+    
+    .banner .box-texts p {
+        text-align: center;
+    }
+
+    .banner .box-texts .sofa-img-mb {
+        display: block;
+        width: 100%;
+    }
+
+    .banner .box-texts .sofa-img-mb img {
+        width: 100%;
+    }
+
+    .banner .box-texts .btn_cta {
+        flex-direction: column;
+        display: flex;
+        gap: 15px;
+        text-align: center;
+    }
+
+    .banner .box-texts .btn_cta {
+        flex-direction: column;
+        display: flex;
+        gap: 15px;
+        text-align: center;
+    }
+
+    .banner .box-texts .btn_cta .green, 
+    .banner .box-texts .btn_cta .white {
+        margin-right: 0px;
+    }
+
+    .banner .sofa-img {
+        display: none;
     }
 }
