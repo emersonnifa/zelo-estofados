@@ -68,7 +68,10 @@ header .texts-menu {
     justify-content: space-between;
     align-items: center;
     padding: 0;
+}
 
+header .texts-menu #hamburguer {
+    display: none;
 }
 
 header span {

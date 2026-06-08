@@ -1,5 +1,32 @@
 @media (max-width: 480px) {
-    header {
-        background-color: black;
+
+    header .texts-menu .logo {
+        padding: 0 0 0 1rem ;
+    }
+
+    header .texts-menu nav {
+        display: none;
+    }
+
+    header .texts-menu #hamburguer {
+        display: block;
+        position: absolute;
+        left: 48%;
+    }
+
+    header .texts-menu nav ul {
+        position: fixed;
+        top: 80px;
+        left: 0;
+        flex-direction: column;
+        background-color: var(--bg-color-green);
+        width: 100vw;
+        height: 20vh;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    header .texts-menu nav ul li a {
+        color: white;
     }
 }
