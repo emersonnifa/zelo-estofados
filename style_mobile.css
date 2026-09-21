@@ -258,6 +258,11 @@
         padding-top: 50px;
     }
 
+    .resultados .texto {
+        background-color: var(--bg-color-blue);
+        padding: 25px;
+    }
+
 
 
 
