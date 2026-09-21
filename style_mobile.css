@@ -154,6 +154,17 @@
         text-align: left;
         min-height: 290px;
         justify-content: space-around;
+        border: 1px solid #006b66;
+        border-top: 4px solid #006b66;
+        background-color: #223950;
+    }
+
+    .servicos .type-services .service-sofa h3 {
+        color: white;
+    }
+
+    .servicos .type-services .service-sofa p {
+        color: var(--bg-color-grey-hover);
     }
 
     .servicos .type-services .service-sofa svg {
@@ -164,6 +175,12 @@
 
     .servicos .type-services .service-sofa .sofa-img {
         display: none;
+    }
+
+    .servicos .type-services .service-sofa a {
+        color: var(--bg-color-gold);
+        font-weight: 600;
+        text-decoration: none;
     }
 
     .servicos .type-services .service-another {
@@ -177,6 +194,8 @@
         min-height: 290px;
         text-align: left;
         padding: 0px;
+        border: 1px solid var(--bg-color-gold);
+        border-top: 4px solid var(--bg-color-gold);
     }
 
     .servicos .type-services .service-another .serv-colchao .texto_col {
@@ -188,6 +207,22 @@
         padding: 15px;
         background-color: white;
         border-radius: 10px;
+        background-color: #223950;
+        border-radius: 15px;
+    }
+
+    .servicos .type-services .service-another .serv-colchao .texto_col h3 {
+        color: white;
+    }
+
+    .servicos .type-services .service-another .serv-colchao .texto_col p {
+        color: var(--bg-color-grey-hover);
+    }
+
+    .servicos .type-services .service-another .serv-colchao .texto_col a {
+        color: var(--bg-color-gold);
+        font-weight: 600;
+        text-decoration: none;
     }
 
     .servicos .type-services .service-another .serv-colchao .img-col {
@@ -216,35 +251,22 @@
 
     /* |||||||||||||||||||||||||| seção responsável pelos Benefícios |||||||||||||||||||||||||| */
 
-    .pontos-positivos {
-        height: 100vh;
-        text-align: center;
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-        margin-top: 70px;
-    }
-
-    .pontos-positivos .container-mb h2 {
-        padding: 40px;
-    }
-
-    .pontos-positivos .box-pontos {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        gap: 50px;
-        margin-top: 40px;
+    .resultados {
+        width: 100%;
+        background-color: #f5f3ef;
+        padding-bottom: 50px;
+        padding-top: 50px;
     }
 
 
-    .pontos-positivos .box-pontos .pontos .box-pont {
-        display: flex;
-        justify-content: space-between;
-        flex-direction: column;
-        align-items: center;
-        height: 130px;
-    }
+
+
+
+
+
+
+
+    
 
     /* |||||||||||||||||||||||||| seção responsável pelo CTA |||||||||||||||||||||||||| */
 
