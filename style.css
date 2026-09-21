@@ -4,12 +4,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
 :root {
-    --bg-color-light-grey: #F7F9FB;
     --bg-color-grey: #3e4947;
+    --bg-color-light-grey: #F7F9FB;
     --bg-color-grey-hover: #E6E8EA;
-    --bg-color-green: #006a65;
-    --bg-color-green-hover: #0f7c77;
-    --bg-color-light-green: #9FF1EA;
+
+    --bg-color-blue: #1A2B3C;
+    --bg-color-blue-hover: #214870;
+
+    --bg-color-gold: #D4AF37;
 }
 
 * {
@@ -75,7 +77,7 @@ header .texts-menu #hamburguer {
 }
 
 header span {
-    color: var(--bg-color-green);
+    color: var(--bg-color-blue);
     font-size: 24px;
     font-weight: 500;
 }
@@ -97,12 +99,12 @@ header a {
 }
 
 header nav ul li a:hover {
-    color: var(--bg-color-green);
+    color: var(--bg-color-blue);
 }
 
 header .btn_gr {
     color: white;
-    background-color: var(--bg-color-green);
+    background-color: var(--bg-color-blue);
     padding: 5px 15px;
     border-radius: 15px;
 
@@ -110,7 +112,7 @@ header .btn_gr {
 
 header .btn_gr:hover {
     color: white;
-    background-color: var(--bg-color-green-hover);
+    background-color: var(--bg-color-blue-hover);
 }
 
 main {
@@ -165,15 +167,15 @@ main {
 .banner .box-texts .btn_cta .green {
     text-decoration: none;
     color: white;
-    background-color: var(--bg-color-green);
+    background-color: var(--bg-color-blue);
     padding: 15px 35px;
-    border-radius: 25px;
+    /* border-radius: 25px; */
     margin-right: 15px;
     transition-duration: 300ms;
 }
 
 .banner .box-texts .btn_cta .green:hover {
-    background-color: var(--bg-color-green-hover);
+    background-color: var(--bg-color-blue-hover);
 }
 
 .banner .box-texts .btn_cta .white {
@@ -181,7 +183,6 @@ main {
     color: var(--bg-color-grey);
     border: 1px solid var(--bg-color-grey);
     padding: 15px 35px;
-    border-radius: 25px;
     margin-right: 15px;
     transition-duration: 300ms;
 }
@@ -217,7 +218,7 @@ main {
 .servicos .border {
     border-bottom-style: solid;
     width: 5rem;
-    border-color: var(--bg-color-green);
+    border-color: var(--bg-color-blue);
     border-bottom-width: 4px;
     padding-top: 30px;
 }
@@ -246,7 +247,7 @@ main {
 }
 
 .servicos .type-services .service-sofa:hover {
-    border: solid 1px var(--bg-color-green);
+    border: solid 1px var(--bg-color-blue);
 }
 
 .servicos .type-services .service-sofa svg {
@@ -396,7 +397,7 @@ main {
 }
 
 .cta .cta_box .text-cta h2 {
-    color: var(--bg-color-green);
+    color: var(--bg-color-blue);
 }
 
 .cta .cta_box .text-cta p {
@@ -408,7 +409,7 @@ main {
     font-size: 24px;
     color: white;
     text-decoration: none;
-    background-color: var(--bg-color-green);
+    background-color: var(--bg-color-blue);
     font-weight: 400;
     padding: 20px 25px;
     border-radius: 35px;
@@ -435,7 +436,7 @@ footer .box-info-footer a {
 }
 
 footer .box-info-footer a:hover {
-    color: var(--bg-color-green-hover);
+    color: var(--bg-color-blue-hover);
 }
 
 footer .box-info-footer .logo {

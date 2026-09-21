@@ -6,8 +6,15 @@
         margin: 0 auto;
     }
 
+    /*///////// Seção do Menu /////////*/
+
+    header {
+        background-color: var(--bg-color-blue);
+    }
+
     header .texts-menu .logo {
         padding: 0 0 0 1rem;
+        color: var(--bg-color-gold);
     }
 
     header .texts-menu nav {
@@ -18,6 +25,7 @@
         display: block;
         position: absolute;
         right: 5%;
+        color: var(--bg-color-gold);
     }
 
     header .texts-menu nav ul {
@@ -25,7 +33,7 @@
         top: 80px;
         left: 0;
         flex-direction: column;
-        background-color: var(--bg-color-green);
+        background-color: var(--bg-color-blue);
         width: 100vw;
         height: 20vh;
         display: flex;
@@ -40,21 +48,22 @@
         display: none;
     }
 
+    /*///////// Seção do Banner /////////*/
+
+
     .banner {
         flex-direction: column;
+        height: auto;
+        margin-bottom: 100px;
     }
 
     .banner .box-texts {
         width: 100%;
-    }
-
-    .banner .box-texts span {
-        display: none;
+        margin-top: 100px;
     }
 
     .banner .box-texts h1 {
-        padding-top: 120px;
-        text-align: center;
+        text-align: left;
     }
 
     .banner .box-texts p {
@@ -62,8 +71,7 @@
     }
 
     .banner .box-texts .sofa-img-mb {
-        display: block;
-        width: 100%;
+        display: none;
     }
 
     .banner .box-texts .sofa-img-mb img {
@@ -89,12 +97,47 @@
         margin-right: 0px;
     }
 
+    .banner .box-img {
+        width: 100%;
+        margin-top: 50px;
+    }
+
     .banner .sofa-img {
         display: none;
     }
 
+    .banner .sofa-img-mobile {
+        width: 100%;
+    }
+
+    .banner .sofa-img-mobile img {
+        width: 100%;
+    }
+
+    /*///////// Seção de Serviço /////////*/
+
     .servicos {
-        text-align: center;
+        text-align: left;
+        background-color: var(--bg-color-blue);
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    .servicos span {
+        color: var(--bg-color-gold);
+        text-transform: uppercase;
+        font-weight: 600;
+        font-size: clamp(0.938rem, 1vw + 0.5rem, 1.125rem);
+        line-height: 1.6;
+    }
+
+    .servicos h2 {
+        color: white;
+        margin: 15px 0;
+    }
+
+    .servicos p {
+        color: var(--bg-color-grey-hover);
     }
 
     .servicos .border {
